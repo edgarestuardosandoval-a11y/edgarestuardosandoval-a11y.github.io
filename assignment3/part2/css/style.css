@@ -1,5 +1,6 @@
 /* General setup */
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -19,14 +20,38 @@ main {
   gap: 40px;
   padding: 20px 0;
 }
-.share-tech-regular {
-  font-family: "Share Tech", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+/* Apply your body font to the whole page, and your heading font to your headings. */
+html {
+  font-family: 'Noto Sans', sans-serif;
+ 
+}
+h1,h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-
-/* header and footer */
+/*Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
+Give your body text a suitable line-height.
+Center your top level heading on the page.
+Remove the bottom margin from your second-level headings.
+Give your headings and body text some letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 2rem.*/
+h1 {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+}   
+h2 {
+  margin-bottom: 0;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+body {
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
+  font-size: 1rem;
+}
 
 header {
   border-bottom: 5px solid #aa6666;
