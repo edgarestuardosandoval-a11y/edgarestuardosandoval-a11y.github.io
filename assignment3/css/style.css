@@ -41,7 +41,15 @@ Make the links darkgreen while hovered over with the mouse pointer or focused vi
 */
 a{
     color: green;
-    hover{
-        color: darkgreen;
-    }
+    
+    
 }
+a:hover{
+        color: darkgreen;
+        text-decoration: none;
+
+}
+a:focus{
+        color: darkgreen;
+        text-decoration: none;
+    }
