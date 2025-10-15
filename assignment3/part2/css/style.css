@@ -30,12 +30,11 @@ h1,h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-/*Give your headings and other element types appropriate font-sizes defined using a suitable relative unit.
-Give your body text a suitable line-height.
-Center your top level heading on the page.
-Remove the bottom margin from your second-level headings.
-Give your headings and body text some letter-spacing to make them not too squashed, and allow the letters to breathe a bit.
+/*
 Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 2rem.*/
+section h2 + p {
+  text-indent: 2rem;
+}
 h1 {
   text-align: center;
   letter-spacing: 0.1rem;
@@ -63,4 +62,30 @@ footer {
 
 footer p {
   text-align: center;
+}
+/*
+Links
+Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
+Make it so that links are underlined by default, but when you hover or focus them the underline disappears.
+Remove the default focus outline from ALL the links on the page.
+Make it so that external links have the external link icon inserted to the right of them, at a suitable size.*/
+a:link{
+  color: #aa8888;
+  text-decoration: underline;
+  outline: none;
+}
+a:visited {
+  color: #aa1111;
+  text-decoration: underline;
+  outline: none;
+}
+a:hover, a:focus {
+  color: #aa3333;
+  text-decoration: none;
+  outline: none;
+}
+a[href*="http"] {
+  padding-right: 16px;
+  background: url("../images/external-link-52.png") no-repeat right center;
+  background-size: 14px 14px;
 }
