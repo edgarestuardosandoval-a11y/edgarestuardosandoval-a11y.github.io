@@ -21,3 +21,27 @@ ul{
 
 
 }
+h1{
+    color: darkslategray;
+    border-bottom : 10px Dotted purple;
+    font-size: 2rem;
+
+}
+h2{
+    font: 1.5rem;
+}
+/*Select the <div> using a class selector, and give it a color of darkslategray and a bold font weight.*/
+.job-title{
+    color: darkslategray;
+    font-weight: bold;
+}
+/*make links green
+
+Make the links darkgreen while hovered over with the mouse pointer or focused via the keyboard (you'll need to use a couple of pseudo-classes for this).
+*/
+a{
+    color: green;
+    hover{
+        color: darkgreen;
+    }
+}
