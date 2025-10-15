@@ -89,3 +89,11 @@ a[href*="http"] {
   background: url("../images/external-link-52.png") no-repeat right center;
   background-size: 14px 14px;
 }
+/*Lists
+Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list should have the same line-height and top and bottom margin as the paragraphs.
+Give your list items appropriate bullet styles for the design of the page. It is up to you whether you choose a custom bullet image or something else.*/
+ul, ol {
+  line-height: 1.6;
+  margin: 1rem 0;
+  padding-left: 40px;
+}
