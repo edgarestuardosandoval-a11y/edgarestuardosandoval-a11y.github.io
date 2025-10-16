@@ -68,3 +68,25 @@ nav {
   z-index: 1000;
 }
 
+
+/*Cause the "feature" image inside the article to have text wrapped around it to the right and bottom, with a suitable amount of space between the image and the text.*/
+
+.feature {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+/*
+Display the <article> and <aside> elements as a two-column layout, with the former three times as wide as the latter. */
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+/*The columns should be a flexible size so that if the browser window gets narrower, the columns become narrower. Include a 20-pixel gap between the two columns.
+The photographs should display as a two-column grid with equal-sized columns and a 5-pixel gap between the images.*/
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
