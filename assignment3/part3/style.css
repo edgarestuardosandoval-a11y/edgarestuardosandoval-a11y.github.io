@@ -53,3 +53,18 @@ nav a {
 .feature {
   width: 200px;
 }
+/*Display the navigation items in a row, with an equal amount of space between the items and a smaller amount of space at either end of the row.*/
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 150px;
+}
+
+/*Style the navigation bar so it scrolls with the content normally but then becomes stuck at the top of the viewport when it reaches it.*/
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
