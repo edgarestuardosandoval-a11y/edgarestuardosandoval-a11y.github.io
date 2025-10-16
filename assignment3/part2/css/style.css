@@ -63,6 +63,23 @@ footer {
 footer p {
   text-align: center;
 }
+
+/*Lists
+Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list should have the same line-height and top and bottom margin as the paragraphs.
+Give your list items appropriate bullet styles for the design of the page. It is up to you whether you choose a custom bullet image or something else.*/
+ul, ol {
+  line-height: 1.6;
+  margin: 1rem 0;
+  padding-left: 40px;
+}
+/*Navigation menu
+Style your navigation menu so that it harmonizes with the page. We'll leave this largely up to you, but here are some tips/suggestions:
+
+Make the links look like buttons, which are as wide as the column they are in, and tall enough that the nav items fill a decent amount of space.
+Apply the same font to your nav link text as you applied to your headings.
+Make sure the hit area of each link is expanded to fill the entirety of its parent list item.
+Center the text inside each link.
+Uppercase the text (using CSS, not by editing the HTML!)*/
 /*
 Links
 Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.
@@ -71,7 +88,6 @@ Remove the default focus outline from ALL the links on the page.
 Make it so that external links have the external link icon inserted to the right of them, at a suitable size.*/
 a:link{
   color: #aa8888;
-  text-decoration: underline;
   outline: none;
 }
 a:visited {
@@ -84,16 +100,59 @@ a:hover, a:focus {
   text-decoration: none;
   outline: none;
 }
-a[href*="http"] {
+a[href^="http"] {
   padding-right: 16px;
   background: url("../images/external-link-52.png") no-repeat right center;
   background-size: 14px 14px;
 }
-/*Lists
-Make sure the spacing of your lists and list items works well with the styling of the overall page. Each list should have the same line-height and top and bottom margin as the paragraphs.
-Give your list items appropriate bullet styles for the design of the page. It is up to you whether you choose a custom bullet image or something else.*/
-ul, ol {
-  line-height: 1.6;
+
+n/* 4. List styling */
+
+ul,
+ol {
   margin: 1rem 0;
-  padding-left: 40px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+/* 5. Navigation menu */
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+nav li a {
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3.5;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px                           ;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 1px solid #aa6666;
+}
+
+nav li a:focus,
+nav li a:hover {
+  color: white;
+  background: #aa6666;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
 }
