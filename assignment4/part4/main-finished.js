@@ -1,4 +1,6 @@
 // set up canvas
+const para = document.querySelector('p');
+let count = 0;
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -133,7 +135,6 @@ class EvilCircle extends Shape {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
-
         if (distance < this.size + ball.size) {
           ball.exists = false;
           count--;
@@ -159,6 +160,7 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  
 }
 
 function loop() {
