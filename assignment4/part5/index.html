@@ -87,38 +87,54 @@
           >
         </fieldset>
     </div>
+    <div class="form-section">
+        <h2>About your hosts</h2>
 
-    --
+        <div class="separator">
+          <label for="favorite">Who's your favorite bear?</label>
+          <select name="favorite" id="favorite">
+            <option value="papa">Papa bear</option>
+            <option value="mama">Mama bear</option>
+            <option value="junior">Junior</option>
+            <option value="randy">Cousin Randy</option>
+          </select>
+        </div>
+        <div class="separator">
+          <label for="greeting">Which greeting did you prefer?</label>
+          <select name="greeting" id="greeting">
+            <option value="papa">Wave</option>
+            <option value="mama">Friendly greeting</option>
+            <option value="junior">Growl</option>
+            <option value="randy">Claw marks in the door</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Any other feedback?</h2>
 
-    About your hosts
+        <label for="comments">Give us your comments</label>
+        <br />
+        <textarea id="comments" name="comments"></textarea>
+      </div>
+      <div class="form-section">
+        <h2>Your details</h2>
 
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
+        <div class="separator">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" />
+        </div>
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+        <div class="separator">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
 
-    --
+        <div class="separator">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+      </div>
 
-    Any other feedback?
-
-    Give us your comments
-
-    --
-
-    Your details
-
-    Name
-    Email
-    Phone
-
-    --
 
     Submit
 
