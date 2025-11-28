@@ -9,7 +9,7 @@ body {
   margin: 0 auto;
 }
 form {
-  background: url("/assignment4/part5/images/woodland-strip.jpg")
+  background: url("images/woodland-strip.jpg")
     no-repeat;
   margin-top: 20px;
   padding-top: 50px;
