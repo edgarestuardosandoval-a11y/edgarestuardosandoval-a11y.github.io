@@ -99,9 +99,11 @@ class EvilCircle extends Shape {
         case 's':
           this.y += this.velY;
           break;
+        
       }
     });
   }
+} 
 const balls = [];
 
 while (balls.length < 25) {
