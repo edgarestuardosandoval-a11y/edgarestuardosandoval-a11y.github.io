@@ -10,5 +10,17 @@ const images = [
   { filename: "pic4.jpg", alt: "A section of wall from a pharaoh's tomb" },
   { filename: "pic5.jpg", alt: "A large moth on a leaf" },
 ];
-const baseURL =
-  "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+const baseURL ="https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+for (const image of images) {
+  const newImage = document.createElement("img");
+  newImage.src = `${baseURL}${image.filename}`;
+  newImage.alt = image.alt;
+  newImage.tabIndex = "0";
+  thumbBar.appendChild(newImage);
+  newImage.addEventListener("click", updateDisplayedImage);
+  newImage.addEventListener("keydown", (e) => {
+    if (e.code === "Enter") {
+      updateDisplayedImage(e);
+    }
+  });
+}
