@@ -10,7 +10,7 @@ const images = [
   { filename: "pic4.jpg", alt: "A section of wall from a pharaoh's tomb" },
   { filename: "pic5.jpg", alt: "A large moth on a leaf" },
 ];
-const baseURL ="https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
+const baseURL = "./images/";
 for (const image of images) {
   const newImage = document.createElement("img");
   newImage.src = `${baseURL}${image.filename}`;
