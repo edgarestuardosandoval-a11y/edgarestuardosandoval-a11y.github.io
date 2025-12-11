@@ -71,20 +71,20 @@ div[class="nav"] {
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav.nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav.nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav.nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -92,7 +92,7 @@ div[class="nav"] a {
   color: black;
 }
 
-div[class="nav"] .search {
+nav.nav .search {
   flex: 1;
   display: flex;
   align-items: center;
@@ -259,4 +259,9 @@ audio {
 .sr-only {
   position:absolute;
   left:-9999px;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #000;
 }
