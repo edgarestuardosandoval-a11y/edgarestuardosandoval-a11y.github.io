@@ -256,3 +256,7 @@ audio {
 .nav a {
   color: white;
 }
+.sr-only {
+  position:absolute;
+  left:-9999px;
+}
